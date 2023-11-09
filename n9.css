@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 100%;
+    height:100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.header {
+    background-color: aliceblue;
+    color: #1cbdea;
+    padding: 50px;
+       display: flex;
+
+}
+
+.header h1 {
+    font-size: 28px;
+}.navbar {
+    background-color: #1cbdea;
+    padding: 20px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #fff;
+}
+.slider-container{
+    position: relative;
+    overflow: hidden; 
+    text-align: center;
+    padding:300px;
+    margin-top: -40px;
+  }
+  
+  .menu {
+    position: absolute;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #eea4a4;
+    border-radius: 50px;
+    margin: 0 .2em 1em;
+    transition: all .3s ease;
+    &:hover {
+      background: red;
+    }
+  }
+  
+.slide {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: left 0s .75s;
+  }
+  
+  [id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    transition: left .65s ease-out;
+  }
+  
+  .slide-1 {
+    background-image: url(https://media.viu.edu.vn/Media/2_TSVIU/FolderFunc/202301/Images/ts2023-2-20230109093918-e.jpg);
+  }
+  .slide-2 {
+    background-image: url(https://media.viu.edu.vn/Media/2_TSVIU/FolderFunc/202301/Images/ts2023-1-20230109093918-e.jpg);
+  }
+  .slide-3 {
+    background-image: url(https://media.viu.edu.vn/Media/2_TSVIU/FolderFunc/202302/Images/kiem-dinh-20230206073701-e.jpg);
+  }
+  .info-bar{
+    text-align: center;
+    color: #0fa440;
+  }
+  .box{
+    background-color: aliceblue;
+    color: #1cbdea;
+    padding: 50px;
+    text-align: center;  
+
+  }
+  .playlist {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex-basis: 25%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #eea4a4;
+    text-align:left ;
+    -ms-flex-item-align: center;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+.column img:hover{
+  transform: scale(1.2);
+
+}
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #2eece5;
+}ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+li:before {
+  content: "\2022";
+  color: #333;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+li:hover {
+  color: #ff6600;
+  cursor: pointer;
+
+}
+section {
+	padding: 20px;
+}
+
+section h2 {
+	margin: 0;
+}
+
+form label {
+	display: block;
+	margin: 10px 0;
+	font-weight: bold;
+}
+form input[type=date],
+form input[type=url],
+form input[type=text],
+form input[type=email],
+form textarea {
+	width: 100%;
+	padding: 18px;
+	font-size: 15px;
+	border: 1px solid #22e9e6;
+	border-radius: 5px;
+  background-color: #e5f6f6;
+  color: #dcdafb;
+}
+
+form input[type=submit] {
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+footer {
+	background-color: #6ac1ec;
+	padding: 50px;
+	text-align: center;
+	font-size: 14px;
+}form {
+    width: 600px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0fba18;
+  }
